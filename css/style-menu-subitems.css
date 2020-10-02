@@ -1,0 +1,61 @@
+h1{
+    text-align: center;  
+    color: #922634;  
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul{
+    list-style: none;
+    cursor: pointer;    
+    padding: 0;
+}
+nav li{
+    line-height: 3em;
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 0 2.5em;
+    display: block;
+    transition: .4s;
+}
+.menu{
+    width: 100%;
+    background: #2B7692;
+    display: table;
+}
+.menu ul{
+    position: absolute;
+}
+.menu  > li {
+    float: left;
+    width: 180px;
+}
+nav a:hover{
+    background:#B3B3B3;
+}
+/*Segundo Nivel*/
+nav li li{
+    background-color: #558678;
+    font-size: .9em;
+    text-align: center;
+    width: 180px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s;
+}
+
+nav li:hover > ul > li{
+    max-height: 500px;
+    overflow: visible;
+}
+.menu > li > ul{
+    top: 100%;
+}
+/*Tercer Nivel*/
+.menu ul ul{
+    left: 100%;
+    top: 0;
+}

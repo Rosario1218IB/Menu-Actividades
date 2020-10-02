@@ -1,0 +1,110 @@
+body{     
+    margin: 0;
+    padding: 0;
+}
+div#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #438B9C;
+    padding: 20px 0 15px 0;
+    height: 6rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    border-bottom: 5px double #E59A6E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+h1{
+    text-align: center;  
+    font-size: 3em;  
+    color: #F2F5F6;
+    text-shadow: -3px 0px 1px #F1783B;
+}
+div#contenedor{   
+    width: 100%;         
+}
+
+
+@media only screen and (max-width:767px){
+div.cont-img{  
+    width: 90%;
+    float: left; 
+    margin-left: 2rem;    
+    margin-bottom: 2rem;
+    text-align: center;   
+}
+img.img-conten{
+    width: 90%;
+    display: block;
+    margin: 0 auto 0 auto;    
+    border-radius: 5px;
+       
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 0 auto;
+    padding:  10px 0 10px 0;
+    border: 2px solid #CFCBC9 ;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: #47727B;
+
+}
+}
+@media only screen and (min-width:768px) and (max-width: 1023px){
+    div.cont-img{
+        width: 31%; 
+        display: inline-block;        
+        margin-left: 1.5%; 
+        margin-bottom: 1.5em;  
+        text-align: center;          
+    }
+    img.img-conten{
+        width: 100%;
+        display: block;
+        margin: 0 auto 0 auto;    
+        border-radius: 5px;   
+           
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: .68em;
+        width: 90%;
+        margin: 0 auto;
+        padding:  8px 0 8px 0;
+        border: 2px solid #CFCBC9 ;
+        border-radius: 5px;
+        font-weight: bolder;
+        color: #47727B;
+    }
+    }
+    @media only screen and (min-width:1024px){
+        div.cont-img{
+            width: 21%;            
+            display: inline-block; 
+            margin-left: 2%;        
+            margin-bottom: 1.5rem;                                
+        }
+        img.img-conten{
+            width: 100%;
+            display: block;
+            margin: 0 auto 0 auto;    
+            border-radius: 5px;               
+        }
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: .7em;
+            width: 90%;
+            margin: 0 auto;
+            padding:  8px 0 8px 0;
+            border: 2px solid #CFCBC9 ;
+            border-radius: 5px;
+            font-weight: bolder;
+            color: #47727B;
+            text-align: center;
+        }
+        
+    }
