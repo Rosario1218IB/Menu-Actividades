@@ -1,0 +1,103 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px;     
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+h1{
+    text-align: center;  
+    color: #296150;
+    
+}
+label{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: .2em;
+}
+#toggle{
+    display: none;    
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+.menu{
+    width: 100%;  
+    display: table;
+    border-bottom: 1px solid #296150;
+}
+.menu ul{
+    position: absolute;
+}
+ul.menu > li{
+    width: 180px;
+    margin-left: 2px;
+    text-align: center;
+}
+li ul > li a{      
+   width: 120px;  
+}
+nav li{
+    line-height: 3em; 
+    position: relative;
+}
+nav li li{
+    overflow: hidden;
+    max-width: 0; 
+}
+.menu > li{     
+    width: 170px;
+    float: left; 
+}
+
+a{
+    text-decoration: none;
+    color: #296150;
+    text-align: center;
+    padding:0 2em; 
+    font-size: 1em; 
+    display: block;
+    transition: .4s;   
+   
+}
+a:hover{
+    background-color: #E7E3E3 ;
+    width: 120px;
+}
+
+ li:hover > ul > li{    
+    max-height: 100px;
+    overflow: visible;     
+}
+@media only screen and (max-width:630px){
+    label{
+        display: block;
+        cursor: pointer;
+        color: #296150;
+        font-size: 25px;
+    }
+    .nav{
+        border-bottom: 1px solid #8AA59D ;
+        margin-top: 0;
+        text-align: right;  
+        background-color: aqua;   
+    }        
+    .menu{
+        width: 100%;  
+        display: none;
+        border-bottom: 1px solid #296150;
+    }
+        
+    #toggle:checked + nav ul{
+        display: block;          
+    }
+}
+
+
+
+
+

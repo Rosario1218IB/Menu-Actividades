@@ -9,12 +9,12 @@ h1{
     border: 1px solid black;
 }
 .cont-1{
-    background-color: blue;
+    background-color: darkcyan;
     width: 200px;
     height: 200px;
 }
 .cont-2{
-    background-color:red;
+    background-color:grey;
     width: 200px;
     height: 200px;
 }

@@ -24,7 +24,13 @@ h1{
 div#contenedor{   
     width: 100%;         
 }
-
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 70px;
+    margin-left: 70px;
+    padding: 5px;
+}
 
 @media only screen and (max-width:767px){
 div.cont-img{  

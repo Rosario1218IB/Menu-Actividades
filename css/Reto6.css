@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+.contenedor{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+.cont-1{
+    background-color: darkcyan;
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+}
+.cont-2{
+    background-color:purple;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+.cont-3{
+    background-color:gray;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
+.cont-4{
+    background-color:yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    top: 300px;
+}
