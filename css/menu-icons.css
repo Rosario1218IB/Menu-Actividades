@@ -19,7 +19,7 @@ nav{
     left: -18em;
     padding-top: 3em;
     top: 0;
-    height: 50%;
+    height: 100%;
     z-index: 5;
     transition: .5s;
 }
@@ -40,7 +40,6 @@ menu a{
 
 .menu li a span{
     margin-left: 9px;
-    padding: 7px 0;
     color: #E4F0ED;
 }
 a{
@@ -49,8 +48,9 @@ a{
     font-size: 1.1em;
 }
 li{
-    margin-bottom: 15px;
+    cursor: pointer;
     padding-left: 10px;
+    box-shadow: 3px 0 rgba(23, 95, 55, 0.8)inset;
 }
 .fas{
     color: #E4F0ED;
@@ -69,10 +69,15 @@ nav.mostrar{
 }
 li:hover{
     background-color: rgba(23, 95, 55, 0.8);
+    width: 90%;
     transition: .2s;
+    margin-left: 1em;
+    box-shadow: 3px 0 rgba(23, 95, 55, 0.8)inset;
+    
 }
 .content{
     width: 90%;
     display: block;
     margin: 0 auto;
 }
+
