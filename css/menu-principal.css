@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
 }
-.titulo{
-    position: absolute; 
-    top: 8px;
-    left: 10px;
+body{
+    background: white;
 }
 h1{
     text-align: left;
@@ -13,86 +11,121 @@ h1{
     color: seashell;
     font-size: 1.8em;
 }
-.icon-menu{
-    color: red;
-    float: right;
-
+.titulo{
+    position: absolute; 
+    top: 15px;
+    left: 20px;
+}
+.menu-bar{
+    display: none;
 }
 header{
     width: 100%;
 }
 header nav{
-    background: red;
+    background: rgb(222, 1, 8);
     width: 100%;
+    margin: 0 auto;
+    z-index: 10;
 }
 header nav ul{
-    list-style-type: none;
+    list-style: none;
     text-align: right;
 }
 header nav ul li{
     display: inline-block;
     position: relative;
 }
-
-header nav ul li .children{
-    display: none;
+header nav ul li a span{
+    margin-right: 10px;
 }
 header nav ul li:hover{
     background-color: rgba(191, 0, 6);
 }
 header nav ul li:hover .children{
     display: block;
-    text-align: left;
-    position: absolute;
-    background-color: red;
+    text-align: center;
+    z-index: 20;
 }
 header nav ul li a{
     text-decoration: none;
     color: seashell;
     display: block;
-    padding: 15px 10px;
-    width: 110px;
-    text-align: center;
+    padding: 20px;
 }
-span{
-    margin-right: 5px;
+header nav ul li .children{
+    display: none;
+    background: #011826;
+    position: absolute;
 }
 .main-content{
     margin: 2em;
     text-align: justify;
 }
 @media screen and (max-width:850px){
+    body{
+        padding-top: 69px;
+    }
     .titulo{
-        z-index: 2;
+        display: none;
     }
-    h1{
-        color: red;
-    }
-    header nav{
-        width: 80%;
-        position: fixed;
-        /*right: 100%;*/
-        height: calc(100% - 80px);
-        background-color: whitesmoke;
-        
-    }
-    header nav ul{
+    .menu-bar{
         display: block;
         width: 100%;
-        background-color: gray;
+        position: fixed;
+        top: 0;
+        background: rgb(222, 1, 8);
     }
-    
+    .menu-bar .btn-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+    .menu-bar span{
+        float: right;
+        font-size: 38px;
+    }
+    header nav {
+        width: 70%;
+        position: fixed;
+        /* right:75%*/
+        height:  calc(100% - 80px);
+        background: rgb(230, 230, 230);
+        margin: 0;
+        overflow: scroll;
+    }
     header nav ul li{
         display: block;
+        border:  1px solid silver;
     }
     header nav ul li a{
+        padding: 12px;
         display: block;
-        color: red;
+        text-align: left;
+        color: slategray;
     }
-    
-    
-    
-    
-    
+    header nav ul li a:hover{
+        color: white;
+        padding: 12px;        
+    }
+    header nav ul li .children{
+        width: 100%;
+        background: white;
+        color: white;
+        position: relative;
+    }
+    header nav ul li .children a{
+        margin-left: 20px;
+    }
+    header nav ul li .icon-chevron-small-down{
+        float: right;
+        top: 3px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
 
 }
