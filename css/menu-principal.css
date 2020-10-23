@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    position: absolute; 
+    top: 8px;
+    left: 10px;
+}
+h1{
+    text-align: left;
+    display: block;
+    color: seashell;
+    font-size: 1.8em;
+}
+.icon-menu{
+    color: red;
+    float: right;
+
+}
+header{
+    width: 100%;
+}
+header nav{
+    background: red;
+    width: 100%;
+}
+header nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li .children{
+    display: none;
+}
+header nav ul li:hover{
+    background-color: rgba(191, 0, 6);
+}
+header nav ul li:hover .children{
+    display: block;
+    text-align: left;
+    position: absolute;
+    background-color: red;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: seashell;
+    display: block;
+    padding: 15px 10px;
+    width: 110px;
+    text-align: center;
+}
+span{
+    margin-right: 5px;
+}
+.main-content{
+    margin: 2em;
+    text-align: justify;
+}
+@media screen and (max-width:850px){
+    .titulo{
+        z-index: 2;
+    }
+    h1{
+        color: red;
+    }
+    header nav{
+        width: 80%;
+        position: fixed;
+        /*right: 100%;*/
+        height: calc(100% - 80px);
+        background-color: whitesmoke;
+        
+    }
+    header nav ul{
+        display: block;
+        width: 100%;
+        background-color: gray;
+    }
+    
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        display: block;
+        color: red;
+    }
+    
+    
+    
+    
+    
+
+}
