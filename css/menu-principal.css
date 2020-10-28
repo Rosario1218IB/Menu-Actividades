@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background: white;
-}
 h1{
     text-align: left;
     display: block;
@@ -16,8 +13,11 @@ h1{
     top: 15px;
     left: 20px;
 }
-.menu-bar{
+.menu_bar{
     display: none;
+}
+body{
+    background: white;
 }
 header{
     width: 100%;
@@ -36,27 +36,38 @@ header nav ul li{
     display: inline-block;
     position: relative;
 }
-header nav ul li a span{
-    margin-right: 10px;
-}
-header nav ul li:hover{
-    background-color: rgba(191, 0, 6);
-}
-header nav ul li:hover .children{
-    display: block;
-    text-align: center;
-    z-index: 20;
-}
 header nav ul li a{
     text-decoration: none;
     color: seashell;
     display: block;
     padding: 20px;
 }
+header nav ul li a span{
+    margin-right: 10px;
+}
+/*header nav ul li:hover{
+    background-color: rgba(191, 0, 6);
+}
+header nav ul li:hover .children{
+    display: block;
+    text-align: center;
+    z-index: 20;
+}*/
+
 header nav ul li .children{
     display: none;
+    width: 150%;
     background: #011826;
     position: absolute;
+    text-align: left;
+}
+header nav ul li .children li{
+    display: block;
+    border:  1px solid rgba(255, 255, 255, .5);
+}
+header nav ul li .children li a{
+    display: block;
+    color: rgb(64, 64, 64);
 }
 .main-content{
     margin: 2em;
@@ -69,14 +80,14 @@ header nav ul li .children{
     .titulo{
         display: none;
     }
-    .menu-bar{
+    .menu_bar{
         display: block;
         width: 100%;
         position: fixed;
         top: 0;
         background: rgb(222, 1, 8);
     }
-    .menu-bar .btn-menu {
+    .menu_bar .bt-menu {
         display: block;
         padding: 20px;
         color: #fff;
@@ -84,14 +95,14 @@ header nav ul li .children{
         font-weight: 900;
         text-decoration: none;
     }
-    .menu-bar span{
+    .menu_bar span{
         float: right;
         font-size: 38px;
     }
     header nav {
         width: 70%;
         position: fixed;
-        /* right:75%*/
+        right:100%;
         height:  calc(100% - 80px);
         background: rgb(230, 230, 230);
         margin: 0;
@@ -101,6 +112,10 @@ header nav ul li .children{
         display: block;
         border:  1px solid silver;
     }
+
+    header nav ul li:hover{
+        background: white;
+    }
     header nav ul li a{
         padding: 12px;
         display: block;
@@ -109,7 +124,8 @@ header nav ul li .children{
     }
     header nav ul li a:hover{
         color: white;
-        padding: 12px;        
+        padding: 12px;  
+        color: black;      
     }
     header nav ul li .children{
         width: 100%;
@@ -125,6 +141,10 @@ header nav ul li .children{
         top: 3px;
         margin-left: 10px;
         margin-right: 0;
+    }
+    .main-content{
+        margin: 2em;
+        text-align: justify;
     }
 
 
