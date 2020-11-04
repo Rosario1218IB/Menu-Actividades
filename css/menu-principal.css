@@ -136,6 +136,13 @@ header nav ul li .children li a{
     header nav ul li .children a{
         margin-left: 20px;
     }
+    header nav ul li .children a:hover{        
+        margin-left: 0;
+        border-top: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid rgb(230, 230, 230);
+        width: 100%;
+        transition: all .8s;
+    }
     header nav ul li .icon-chevron-small-down{
         float: right;
         top: 3px;
