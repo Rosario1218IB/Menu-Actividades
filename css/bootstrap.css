@@ -5,6 +5,7 @@ h1{
 }
 h2{
     padding: 15px;
+    margin: 20px 0;
 }
 img{
     width: 300px;    
@@ -15,11 +16,18 @@ img{
     
     margin-left: 40px;
     margin-bottom: 10px;
-    width: 100px;
+    width: 220px;
+}
+.a-page{
+    width: 200px;
+}
+.a-page span{
+    float: right;
 }
 .badge{
     background-color: rgb(37, 110, 194);
     font-size: 1em;
+    margin-left: 5px;
 }
 a{
     display: block;
@@ -29,6 +37,25 @@ a{
 a span{
     margin-left:100px;
 }
+.btn-group{
+    width: 100px;
+}
 .progress{
     margin-bottom: 20px;
+}
+.alineacion-lista{
+    float: Right;
+}
+table{
+    width: 100%;
+}
+td{
+    padding: 10px;
+}
+.btn-form {
+    float: right;
+    width: 100px;
+}
+span{
+    margin-left: 0;
 }
