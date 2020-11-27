@@ -12,12 +12,7 @@ img{
     height: 200px;
     margin-top: 10px;
 }
-.btn{
-    
-    margin-left: 40px;
-    margin-bottom: 10px;
-    width: 220px;
-}
+
 .a-page{
     width: 200px;
 }
@@ -58,4 +53,9 @@ td{
 }
 span{
     margin-left: 0;
+}
+.img-carrusel{
+    width:600px;
+    display: block;
+    margin: 0 auto;
 }
