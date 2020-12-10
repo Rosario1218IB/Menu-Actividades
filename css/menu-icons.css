@@ -30,12 +30,15 @@ nav{
     padding-left: 0;
     width: 18em;
 }
-menu a{
+.menu a{
     color: #ddd;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
     width: 100%;
+}
+li.items{
+    color: whitesmoke;
 }
 
 .menu li a span{
