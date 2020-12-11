@@ -41,7 +41,6 @@ header nav ul li a{
     text-decoration: none;
     color: seashell;
     display: block;
-    margin-top: 5px;
     padding: 15px ;
 }
 header nav ul li a span{
@@ -59,7 +58,7 @@ header nav ul li:hover .children{
 header nav ul li .children{
     display: none;
     width: 150%;
-    background: #A9A6A4;
+    background: #43877B;
     
     position: absolute;
     text-align: left;
@@ -67,9 +66,8 @@ header nav ul li .children{
 
 header nav ul li .children a:hover{        
     margin-left: 0;
-    border-top: 1px solid rgb(230, 230, 230);
-    border-bottom: 1px solid rgb(230, 230, 230);
     transition: all .8s;
+    background-color: #DAE4E2;
 }
 header nav ul li .children li{
     display: block;
@@ -144,14 +142,15 @@ header nav ul li .children li a{
         position: relative;
     }
     header nav ul li .children a{
-        margin-left: 20px;
-    }
-    header nav ul li .children a:hover{        
         margin-left: 0;
-        border-top: 1px solid rgb(230, 230, 230);
-        border-bottom: 1px solid rgb(230, 230, 230);
+        text-align: center;
+    }
+    header nav ul li .children a:hover{  
+        background-color:#F4F4F4;      
+        margin-left: 0;
         width: 100%;
-        transition: all .8s;
+        transition: .2s;
+        text-align: center;
     }
     header nav ul li .icon-chevron-small-down{
         float: right;
